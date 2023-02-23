@@ -1,0 +1,119 @@
+<div class="container">
+
+  <div class="container postBgcolor">
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">User ID</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="postUserId" name="postUserId">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">
+          Title
+        </label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="postTitle" name="postTitle">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">Body</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="postBody" name="postBody">
+      </div>
+    </div>
+
+    <div class="text-center mb-3">
+      <button class="btn btn-primary" (click)="postData()"> Post</button>
+    </div>
+  </div>
+
+
+  <div class="container putBgcolor">
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">ID</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="putId" name="putId">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">
+          Title
+        </label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="putTitle" name="putTitle">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">Body</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="putBody" name="putBody">
+      </div>
+    </div>
+
+    <div class="text-center mb-3">
+      <button class="btn btn-primary" (click)="putData()"> Put</button>
+    </div>
+  </div>
+
+
+  <div class="container patchBgcolor">
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">ID</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="patchId" name="patchId">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">
+          Title
+        </label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="patchTitle" name="patchTitle">
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">Body</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="patchBody" name="patchBody">
+      </div>
+    </div>
+
+    <div class="text-center mb-3">
+      <button class="btn btn-primary" (click)="patchData()"> Patch</button>
+    </div>
+  </div>
+
+
+  <div class="container deleteBgcolor">
+    <div class="row justify-content-center mb-3">
+      <div class="col-1">
+        <label for="">ID</label>
+      </div>
+      <div class="col-4">
+        <input type="text" [(ngModel)]="deleteId" name="deleteId">
+      </div>
+    </div>
+    <div class="text-center mb-3">
+      <button class="btn btn-danger" (click)="deleteData()"> Delete</button>
+    </div>
+  </div>
+
+</div>
